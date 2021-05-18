@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <script defer src="./preload.js"></script>
+        <script src="https://rawgit.com/jackmoore/autosize/master/dist/autosize.min.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <!--This is the frame for the logout, minimize, close, and region to move the frame around-->
+            <button id="logout" >Logout</button>
+            <button id="closeBtn"></button>
+            <button id="minimizeBtn"></button>
+            <span class="title">
+                Desktop Tweeter
+            </span>
+            
+        </header>
+        <body>
+            <div id="loginDiv"> 
+                <button id="login">LOGIN</button>
+            </div>
+            <div class="blur twitterMessageWhole" id="backgroundBody">
+                <div class="messageLeft">
+                    <div class="profilePicture">
+                        <img src="images/defaultPicture.png" width="48">
+                    </div>
+                </div>
+                <div class="messageRight">
+                    <div class="nameTagLine">
+                        <div class="nameTag">
+                            <div class="name">
+                                Ryan Browning
+                            </div>
+                            <div class="tag">
+                                @RyanBrowningTTU
+                            </div>
+                            <div class="tagFollowers">
+                                <div class="period">
+                                    .
+                                </div>
+                                <div class="time">
+                                    now
+                                </div>
+                            </div>
+                        </div>
+                        <!--Just an image to look like the tweet body-->
+                        <div class="options">
+                            <img src="images/options.png" height="20">
+                        </div>
+                    </div>
+                    <div class="tweetBody">
+                        <div class="textBody">
+                            <textarea id="messageBody" placeholder="What's happening?"></textarea>
+                        </div>
+                        <div class="subBody">
+                            <img class="subImage" src="images/Reply.png" height="20">
+                            <img class="subImage" src="images/Retweet.png" height="20">
+                            <img class="subImage" src="images/Like.png" height="20">
+                            <button id="tweetButton"><img src="images/logo.png" height="20">Tweet</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </body>
+    </body>
+</html>

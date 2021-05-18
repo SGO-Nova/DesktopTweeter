@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    overflow: hidden;
+}
+
+header{
+    background-color: #222;
+    height: 30;
+    -webkit-app-region: drag;
+    
+}
+
+.title{
+    position: relative;
+    color: white;
+    top: 5px;
+    float: right;
+    right: 35%;
+}
+
+#closeBtn, #minimizeBtn, #logout{
+    height: 15;
+    border: 0;
+    color: #00000000;
+    border-radius: 15px;
+    vertical-align: middle;
+    margin-top: 7px;
+    outline: 0;
+    -webkit-app-region: no-drag;
+}
+
+#closeBtn{
+    background-color: #FF403C;
+    border: 0;
+    width: 15;
+    float: right;
+    margin-right: 5px;
+}
+
+#closeBtn:hover{
+    background-color: #EF0000;
+    border: 1;
+    border-color: black;
+}
+
+#minimizeBtn{
+    background-color: #00AA2E;
+    border: 0;
+    width: 15;
+    float: right;
+    margin-right: 7px;
+}
+
+#minimizeBtn:hover{
+    background-color: #00942E;
+    border: 1;
+    border-color: black;
+}
+
+#logout{
+    background-color: #1DA1F2;
+    border: 0;
+    width: 15;
+    color: #00000000;
+    transition: width .25s, color .5s;
+    transition-delay: .25s, 0s;
+    margin-left: 5px;
+}
+
+#logout:hover{
+    background-color: #0D81D2;
+    border: 1;
+    width: 50;
+    color: white;
+    transition: width .5s, color .25s;
+    transition-delay: 0s, .25s;
+    border-color: black;
+}
+
+body{
+    background-color: #333;
+    width: 620px;
+    margin: 0;
+}
+
+.blur{
+    filter: blur(4px);
+}
+
+#loginDiv{
+    position: fixed;
+    z-index: 10;
+    width: 40%;
+    height: 80%;
+    margin: 5% 30% 5% 30%;
+    background-color: #262626;
+}
+
+#login{
+    background-color: #1DA1F2;
+    position: absolute;
+    width: 40%;
+    height: 40px;
+    border-radius: 50px;
+    left: 30%;
+    bottom: 10%;
+    outline: none;
+    border: none;
+}
+
+#login:hover{
+    background-color: #0D81D2;
+}
+
+.twitterMessageWhole{
+    background-color: #fff;
+    margin: 10px;
+    min-height: 110px;
+    padding-inline: 16px;
+    padding-top: 12px;
+    padding-bottom: 1px;
+    display: inline-block;
+}
+
+.messageLeft, .messageRight{
+    display: inline-block;
+}
+
+.messageLeft{
+    width: 48px;
+    position: absolute;
+}
+
+.messageRight{
+    padding-bottom: 12px;
+    padding-left: 60px;
+}
+
+.profilePicture{
+    width: 48px;
+    height: 48px;
+    background-color: #222;
+    border-radius: 48px;
+    display: inline-block;
+}
+
+.nameTagLine{
+    height: 24px;
+    width: 506px;
+    color: #5B7083;
+}
+
+.name, .tag, .tagFollowers, .nameTag, .period, .time{
+    float: left;
+}
+
+.name{
+    color: #000;
+    font-weight: 700;
+}
+
+.tag{
+    margin-left: 4px;
+}
+
+.options{
+    float: right;
+}
+
+.period{
+    padding-inline: 4px;
+    line-height: 12px;
+}
+
+.textBody{
+    width: 506px;
+}
+
+.subBody{
+    width: 100%;
+    margin-top: 12px;
+}
+
+.subImage{
+    margin-right: 90px;
+}
+
+#tweetButton{
+    position: relative;
+    border: 0;
+    background-color: #1DA1F2;
+    height: 25px;
+    width: 70px;
+    border-radius: 50px;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    outline: 0;
+    float: right;
+}
+
+#messageBody{
+    border: none;
+    width: 100%;
+    outline: none;
+    resize: none;
+    font-weight: 400;
+    font-size: 16px;
+    overflow: hidden;
+}
+
